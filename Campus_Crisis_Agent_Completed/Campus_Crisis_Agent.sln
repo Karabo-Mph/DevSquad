@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37012.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Campus_Crisis_Agent", "Campus_Crisis_Agent.csproj", "{895EA95D-023D-4A66-99F7-178276ADE7BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{895EA95D-023D-4A66-99F7-178276ADE7BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{895EA95D-023D-4A66-99F7-178276ADE7BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{895EA95D-023D-4A66-99F7-178276ADE7BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{895EA95D-023D-4A66-99F7-178276ADE7BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A54E1647-A7B0-4033-8051-35A181C77A7A}
+	EndGlobalSection
+EndGlobal
