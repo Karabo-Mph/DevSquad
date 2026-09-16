@@ -207,3 +207,12 @@ System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"m
 2026-09-16 11:56:22.417 +02:00 [INF] Decision for R012: CLOSE → SVC-MEDICAL (status: Resolved, human review: false)
 2026-09-16 11:56:22.431 +02:00 [INF] Successfully processed report R012
 2026-09-16 11:56:22.438 +02:00 [INF] No more reports to process
+[2026-09-16 12:53:23.856 +02:00 INF] Starting Campus Crisis Agent
+[2026-09-16 12:53:25.379 +02:00 INF] Campus Crisis Agent started successfully
+[2026-09-16 12:53:26.748 +02:00 INF] IncidentStateService initialized. Predictions will be written to C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Output\predictions.jsonl
+[2026-09-16 12:53:26.776 +02:00 INF] CorrelationService initialized with thresholds: Match=0.55, Duplicate=0.9
+[2026-09-16 12:53:26.790 +02:00 INF] GroqLlmClient initialized with model: llama3-70b-8192
+[2026-09-16 12:53:26.797 +02:00 INF] AssessmentService initialized with LLM client: true
+[2026-09-16 12:53:26.806 +02:00 INF] DecisionService initialized with HumanReviewConfidenceFloor: 0.45
+[2026-09-16 12:53:26.821 +02:00 INF] Loaded 12 services
+[2026-09-16 12:53:26.847 +02:00 INF] ReportProcessor initialized with 12 reports
