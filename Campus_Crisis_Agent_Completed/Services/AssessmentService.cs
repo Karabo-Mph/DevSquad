@@ -121,19 +121,19 @@ public class AssessmentService
         // Rank 3 (CRITICAL): Immediate life-threatening situations
         if (ContainsAny(text, "active shooter", "explosion", "gunshot", "not breathing", "unconscious", "collapse"))
             return (3, 0.9, "critical-keyword");
-        if (ContainsAny(text, "fire", "flames", "assault", "violence", "gas leak", "weapon"))
+        if (ContainsAny(text, "fire", "flames", "assault", "violence", "gas leak", "weapon", "burning smell", "sparks"))
             return (3, 0.85, "critical-hazard");
 
         // Rank 2 (HIGH): Serious hazards requiring immediate attention
-        if (ContainsAny(text, "smoke", "injury", "injured", "bleeding", "threat", "flood", "electrical spark"))
+        if (ContainsAny(text, "smoke", "injury", "injured", "bleeding", "threat", "flood", "electrical spark", "alarm activated"))
             return (2, 0.75, "high-hazard");
 
         // Rank 1 (MEDIUM): Moderate issues requiring attention
-        if (ContainsAny(text, "alarm", "leak", "outage", "unsafe", "medical", "smell", "spark"))
+        if (ContainsAny(text, "alarm", "leak", "outage", "unsafe", "medical", "smell", "spark", "loose", "broken", "blocking"))
             return (1, 0.65, "medium-signal");
 
         // Rank 0 (LOW): Minor issues or maintenance requests
-        if (ContainsAny(text, "wifi", "noise", "litter", "lost", "broken chair", "slow"))
+        if (ContainsAny(text, "wifi", "noise", "litter", "lost", "slow", "insects", "overflowing", "flickering"))
             return (0, 0.7, "low-signal");
 
         // Default: Medium severity for unknown issues
@@ -141,7 +141,7 @@ public class AssessmentService
     }
 
     private static bool LooksLikeAllClear(string text) =>
-        ContainsAny(text, "false alarm", "all clear", "resolved", "nothing found", "already handled", "ok now", "no fire", "dust");
+        ContainsAny(text, "false alarm", "all clear", "resolved", "nothing found", "already handled", "ok now", "no fire", "dust", "no remaining", "removed", "restored", "reopened", "completed", "stable");
 
     private static bool HasHazard(string text) =>
         ContainsAny(text, "fire", "smoke", "injury", "assault", "leak", "weapon", "unconscious");

@@ -46,3 +46,4 @@ C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\bin\Debug\net8.0\S
 C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\bin\Debug\net8.0\Serilog.Sinks.Console.dll
 C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

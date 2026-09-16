@@ -220,7 +220,7 @@ public class ReportProcessor
             {
                 ReportId = Get(row, "report_id", "id"),
                 Location = Get(row, "location"),
-                Type = FirstNonEmpty(Get(row, "type"), Get(row, "category")),
+                Type = FirstNonEmpty(Get(row, "category"), Get(row, "type")),
                 Description = Get(row, "description"),
                 ReportedSeverity = Get(row, "reported_severity", "severity"),
                 ReporterType = Get(row, "reporter_type")

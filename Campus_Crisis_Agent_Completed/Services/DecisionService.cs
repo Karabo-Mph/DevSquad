@@ -111,20 +111,20 @@ public class DecisionService
     {
         var hay = $"{report.Type} {report.Description} {incident.Type}".ToLowerInvariant();
 
-        // Critical emergency services
-        if (Contains(hay, "fire", "smoke", "flames")) return "SVC-FIRE";
-        if (Contains(hay, "ambulance", "unconscious", "not breathing", "cardiac")) return "SVC-EMS";
-        if (Contains(hay, "injur", "medical", "blood", "ill")) return "SVC-MEDICAL";
+        // Critical emergency services (from official campus_services.csv)
+        if (Contains(hay, "fire", "smoke", "flames", "burning", "electrical spark")) return "SVC-FIRE";
+        if (Contains(hay, "ambulance", "unconscious", "not breathing", "cardiac", "collapsed")) return "SVC-EMS";
+        if (Contains(hay, "injur", "medical", "blood", "ill", "first aid")) return "SVC-MEDICAL";
         if (Contains(hay, "assault", "violence", "weapon", "theft", "suspicious", "security")) return "SVC-SECURITY";
 
-        // Specialized services
-        if (Contains(hay, "electric", "power", "spark")) return "SVC-ELECTRICAL";
-        if (Contains(hay, "wifi", "network", "server", "computer", "it ")) return "SVC-IT";
-        if (Contains(hay, "lock", "access", "badge")) return "SVC-ACCESS";
-        if (Contains(hay, "spill", "litter", "cleaning")) return "SVC-CLEANING";
-        if (Contains(hay, "counsel", "mental", "distress")) return "SVC-COUNSELLING";
-        if (Contains(hay, "announce", "evac")) return "SVC-COMMS";
-        if (Contains(hay, "leak", "hvac", "lift", "elevator", "building")) return "SVC-FACILITIES";
+        // Specialized services (from official campus_services.csv)
+        if (Contains(hay, "electric", "power", "spark", "wiring")) return "SVC-ELECTRICAL";
+        if (Contains(hay, "wifi", "network", "server", "computer", "it ", "authentication")) return "SVC-IT";
+        if (Contains(hay, "lock", "access", "badge", "wheelchair", "accessible")) return "SVC-ACCESS";
+        if (Contains(hay, "spill", "litter", "cleaning", "environmental", "hygiene")) return "SVC-CLEANING";
+        if (Contains(hay, "counsel", "mental", "distress", "wellness")) return "SVC-COUNSELLING";
+        if (Contains(hay, "announce", "evac", "communication")) return "SVC-COMMS";
+        if (Contains(hay, "leak", "hvac", "lift", "elevator", "building", "plumbing", "glass")) return "SVC-FACILITIES";
 
         // Default to general management
         return "SVC-MANAGEMENT";

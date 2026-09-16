@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\data\\campus_services.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:data\\campus_services.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\data\\campus_reports.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:data\\campus_reports.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -123,6 +131,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "campus_services.csv",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Data\\campus_services.csv",
+              "RelativeDocumentMoniker": "Data\\campus_services.csv",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Data\\campus_services.csv",
+              "RelativeToolTip": "Data\\campus_services.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2026-09-16T15:57:24.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "campus_reports.csv",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Data\\campus_reports.csv",
+              "RelativeDocumentMoniker": "Data\\campus_reports.csv",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Data\\campus_reports.csv",
+              "RelativeToolTip": "Data\\campus_reports.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2026-09-16T15:57:22.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Views\\Dashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Dashboard\\Index.cshtml",
@@ -135,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -143,12 +177,11 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-09-16T10:12:15.856Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-16T10:12:15.856Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -160,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ReportProcessor.cs",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\ReportProcessor.cs",
               "RelativeDocumentMoniker": "Services\\ReportProcessor.cs",
@@ -172,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "IncidentStateService.cs",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\IncidentStateService.cs",
               "RelativeDocumentMoniker": "Services\\IncidentStateService.cs",
@@ -184,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ILlmClient.cs",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\ILlmClient.cs",
               "RelativeDocumentMoniker": "Services\\ILlmClient.cs",
@@ -196,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "GroqLlmClient.cs",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\GroqLlmClient.cs",
               "RelativeDocumentMoniker": "Services\\GroqLlmClient.cs",
@@ -208,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "DecisionService.cs",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\DecisionService.cs",
               "RelativeDocumentMoniker": "Services\\DecisionService.cs",
@@ -220,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "CorrelationService.cs",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\CorrelationService.cs",
               "RelativeDocumentMoniker": "Services\\CorrelationService.cs",
@@ -232,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "AssessmentService.cs",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\AssessmentService.cs",
               "RelativeDocumentMoniker": "Services\\AssessmentService.cs",
@@ -244,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": ".gitkeep",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Output\\.gitkeep",
               "RelativeDocumentMoniker": "Output\\.gitkeep",
@@ -256,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Incident.cs",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\Incident.cs",
               "RelativeDocumentMoniker": "Models\\Incident.cs",
@@ -268,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -280,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "DecisionSettings.cs",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\DecisionSettings.cs",
               "RelativeDocumentMoniker": "Models\\DecisionSettings.cs",
@@ -292,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "DecisionLogEntry.cs",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\DecisionLogEntry.cs",
               "RelativeDocumentMoniker": "Models\\DecisionLogEntry.cs",
@@ -304,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "DashboardViewModel.cs",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\DashboardViewModel.cs",
               "RelativeDocumentMoniker": "Models\\DashboardViewModel.cs",
@@ -316,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "CorrelationSettings.cs",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\CorrelationSettings.cs",
               "RelativeDocumentMoniker": "Models\\CorrelationSettings.cs",
@@ -328,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "CampusService.cs",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\CampusService.cs",
               "RelativeDocumentMoniker": "Models\\CampusService.cs",
@@ -340,7 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "CampusReport.cs",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\CampusReport.cs",
               "RelativeDocumentMoniker": "Models\\CampusReport.cs",
@@ -352,7 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "ActionHistoryEntry.cs",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\ActionHistoryEntry.cs",
               "RelativeDocumentMoniker": "Models\\ActionHistoryEntry.cs",
@@ -364,7 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "ActionDecision.cs",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\ActionDecision.cs",
               "RelativeDocumentMoniker": "Models\\ActionDecision.cs",
@@ -376,7 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -388,7 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
