@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CampusCrisisAgent")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d41388a2a773f80df938dd086a23f5dfec35cf82")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b4c28c23ee32904effd75723c5ff6a328bf11d5")]
 [assembly: System.Reflection.AssemblyProductAttribute("CampusCrisisAgent")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CampusCrisisAgent")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

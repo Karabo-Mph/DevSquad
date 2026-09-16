@@ -1,0 +1,18 @@
+2026-09-16 17:25:01.322 +02:00 [INF] Starting Campus Crisis Agent
+2026-09-16 17:25:01.555 +02:00 [INF] Campus Crisis Agent started successfully
+2026-09-16 17:25:02.510 +02:00 [INF] IncidentStateService initialized. Predictions will be written to C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Output\predictions.jsonl
+2026-09-16 17:25:02.525 +02:00 [INF] CorrelationService initialized with thresholds: Match=0.55, Duplicate=0.9
+2026-09-16 17:25:02.532 +02:00 [INF] GroqLlmClient initialized with model: llama3-70b-8192
+2026-09-16 17:25:02.535 +02:00 [INF] AssessmentService initialized with LLM client: true
+2026-09-16 17:25:02.540 +02:00 [INF] DecisionService initialized with HumanReviewConfidenceFloor: 0.45
+2026-09-16 17:25:02.547 +02:00 [INF] Loaded 12 services
+2026-09-16 17:25:02.565 +02:00 [INF] ReportProcessor initialized with 12 reports
+[2026-09-16 17:25:24.384 +02:00 INF] Starting Campus Crisis Agent
+[2026-09-16 17:25:24.726 +02:00 INF] Campus Crisis Agent started successfully
+[2026-09-16 17:25:25.378 +02:00 INF] IncidentStateService initialized. Predictions will be written to C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Output\predictions.jsonl
+[2026-09-16 17:25:25.390 +02:00 INF] CorrelationService initialized with thresholds: Match=0.55, Duplicate=0.9
+[2026-09-16 17:25:25.395 +02:00 INF] GroqLlmClient initialized with model: llama3-70b-8192
+[2026-09-16 17:25:25.397 +02:00 INF] AssessmentService initialized with LLM client: true
+[2026-09-16 17:25:25.401 +02:00 INF] DecisionService initialized with HumanReviewConfidenceFloor: 0.45
+[2026-09-16 17:25:25.407 +02:00 INF] Loaded 12 services
+[2026-09-16 17:25:25.422 +02:00 INF] ReportProcessor initialized with 12 reports

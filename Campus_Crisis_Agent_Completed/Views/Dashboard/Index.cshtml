@@ -3,54 +3,102 @@
     ViewData["Title"] = "Dashboard";
 }
 
-<div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+<div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4 fade-in">
     <div>
-        <h1 class="h3 mb-0">Incident correlation dashboard</h1>
-        <p class="text-muted mb-0">Observe → Correlate → Assess → Decide → Act → Record → Monitor → Reassess</p>
+        <h1 class="h3 mb-1 text-gradient">Campus Crisis Agent</h1>
+        <p class="text-muted mb-0 small">Observe → Correlate → Assess → Decide → Act → Record → Monitor → Reassess</p>
     </div>
     <div class="d-flex gap-2">
         <form asp-action="ProcessNext" method="post">
             @Html.AntiForgeryToken()
-            <button class="btn btn-primary" type="submit" @(Model.RemainingCount == 0 ? "disabled" : null)>Process next report</button>
+            <button class="btn btn-primary" type="submit" @(Model.RemainingCount == 0 ? "disabled" : null)>
+                Process Next
+            </button>
         </form>
         <form asp-action="ProcessAll" method="post">
             @Html.AntiForgeryToken()
-            <button class="btn btn-outline-primary" type="submit" @(Model.RemainingCount == 0 ? "disabled" : null)>Process all</button>
+            <button class="btn btn-outline-primary" type="submit" @(Model.RemainingCount == 0 ? "disabled" : null)>
+                Process All
+            </button>
         </form>
     </div>
 </div>
 
-<p class="small text-muted">
-    Processed @Model.ProcessedCount / @Model.TotalReports
-    · remaining @Model.RemainingCount
-    · predictions: <code>@Model.PredictionsPath</code>
+<!-- Progress Stats -->
+<div class="row g-3 mb-4 fade-in">
+    <div class="col-md-4">
+        <div class="stat-card">
+            <div class="stat-value">@Model.ProcessedCount</div>
+            <div class="stat-label">Reports Processed</div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="stat-card" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
+            <div class="stat-value">@Model.RemainingCount</div>
+            <div class="stat-label">Reports Remaining</div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="stat-card" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
+            <div class="stat-value">@Model.TotalReports</div>
+            <div class="stat-label">Total Reports</div>
+        </div>
+    </div>
+</div>
+
+<p class="small text-muted mb-4">
+    Predictions file: <code>@Model.PredictionsPath</code>
 </p>
 
 <div class="row g-3">
     <div class="col-lg-5">
-        <div class="card panel-card h-100">
-            <div class="card-header fw-semibold">1. Incoming report</div>
+        <div class="card panel-card h-100 fade-in">
+            <div class="card-header fw-semibold">Incoming Report</div>
             <div class="card-body">
                 @if (Model.IncomingReport is null)
                 {
-                    <p class="text-muted mb-0">No reports loaded.</p>
+                    <div class="text-center py-4">
+                        <p class="text-muted mb-0">No reports loaded.</p>
+                    </div>
                 }
                 else
                 {
                     var r = Model.IncomingReport;
-                    <span class="badge @(Model.IncomingIsQueued ? "bg-secondary" : "bg-success") mb-2">
-                        @(Model.IncomingIsQueued ? "Queued (next)" : "Just processed")
-                    </span>
-                    <dl class="row mb-0 small">
-                        <dt class="col-sm-4">Report ID</dt><dd class="col-sm-8"><code>@r.ReportId</code></dd>
-                        <dt class="col-sm-4">Timestamp</dt><dd class="col-sm-8">@r.Timestamp.ToString("u")</dd>
-                        <dt class="col-sm-4">Location</dt><dd class="col-sm-8">@r.Location</dd>
-                        <dt class="col-sm-4">Type</dt><dd class="col-sm-8">@r.Type</dd>
-                        <dt class="col-sm-4">Description</dt><dd class="col-sm-8">@r.Description</dd>
+                    <div class="mb-3">
+                        <span class="badge @(Model.IncomingIsQueued ? "bg-secondary" : "bg-success") mb-2">
+                            @(Model.IncomingIsQueued ? "Queued (next)" : "Just processed")
+                        </span>
+                    </div>
+                    <dl class="row mb-0">
+                        <dt class="col-sm-4 text-muted">Report ID</dt>
+                        <dd class="col-sm-8"><code class="bg-light px-2 py-1 rounded">@r.ReportId</code></dd>
+
+                        <dt class="col-sm-4 text-muted">Timestamp</dt>
+                        <dd class="col-sm-8">@r.Timestamp.ToString("u")</dd>
+
+                        <dt class="col-sm-4 text-muted">Location</dt>
+                        <dd class="col-sm-8">@r.Location</dd>
+
+                        <dt class="col-sm-4 text-muted">Type</dt>
+                        <dd class="col-sm-8">@r.Type</dd>
+
+                        <dt class="col-sm-4 text-muted">Description</dt>
+                        <dd class="col-sm-8">@r.Description</dd>
+
                         @if (r.Processed)
                         {
-                            <dt class="col-sm-4">Incident</dt><dd class="col-sm-8">@r.IncidentId (@r.Relationship)</dd>
-                            <dt class="col-sm-4">Severity</dt><dd class="col-sm-8">@r.AssignedSeverity · @r.Confidence.ToString("0.00")</dd>
+                            <dt class="col-sm-4 text-muted">Incident</dt>
+                            <dd class="col-sm-8">
+                                <a asp-controller="Incidents" asp-action="Details" asp-route-id="@r.IncidentId" class="text-decoration-none">
+                                    @r.IncidentId <span class="badge bg-info">@r.Relationship</span>
+                                </a>
+                            </dd>
+
+                            <dt class="col-sm-4 text-muted">Severity</dt>
+                            <dd class="col-sm-8">
+                                <span class="severity-@r.AssignedSeverity.ToLower()">@r.AssignedSeverity</span>
+                                <span class="text-muted">· @r.Confidence.ToString("0.00")</span>
+                            </dd>
                         }
                     </dl>
                 }
@@ -58,10 +106,10 @@
         </div>
     </div>
     <div class="col-lg-7">
-        <div class="card panel-card h-100">
-            <div class="card-header fw-semibold">2. Decision log</div>
+        <div class="card panel-card h-100 fade-in">
+            <div class="card-header fw-semibold">Decision Log</div>
             <div class="table-responsive">
-                <table class="table table-sm table-striped mb-0">
+                <table class="table table-sm mb-0">
                     <thead>
                         <tr>
                             <th>Report</th>
@@ -79,21 +127,23 @@
                     @foreach (var d in Model.DecisionLog)
                     {
                         <tr>
-                            <td><code>@d.ReportId</code></td>
-                            <td><a asp-controller="Incidents" asp-action="Details" asp-route-id="@d.IncidentId">@d.IncidentId</a></td>
-                            <td>@d.Relationship</td>
-                            <td>@d.Severity</td>
+                            <td><code class="small">@d.ReportId</code></td>
+                            <td><a asp-controller="Incidents" asp-action="Details" asp-route-id="@d.IncidentId" class="text-decoration-none">@d.IncidentId</a></td>
+                            <td><span class="badge bg-light text-dark">@d.Relationship</span></td>
+                            <td><span class="severity-@d.Severity.ToLower()">@d.Severity</span></td>
                             <td>@d.Confidence.ToString("0.00")</td>
                             <td>
-                                @d.Decision
+                                <span class="badge bg-primary">@d.Decision</span>
                                 @if (d.HumanReviewRequired)
                                 {
-                                    <span class="badge bg-warning text-dark">review</span>
+                                    <span class="badge bg-warning text-dark">Review</span>
                                 }
                             </td>
                             <td>@d.Service</td>
-                            <td>@d.Status</td>
-                            <td class="small">@d.Reason</td>
+                            <td>
+                                <span class="status-@d.Status.ToLower()">@d.Status</span>
+                            </td>
+                            <td class="small text-muted">@d.Reason</td>
                         </tr>
                     }
                     </tbody>
@@ -102,10 +152,10 @@
         </div>
     </div>
     <div class="col-lg-7">
-        <div class="card panel-card">
-            <div class="card-header fw-semibold">3. Incident summary</div>
+        <div class="card panel-card fade-in">
+            <div class="card-header fw-semibold">Incident Summary</div>
             <div class="table-responsive">
-                <table class="table table-sm table-hover mb-0">
+                <table class="table table-sm mb-0">
                     <thead>
                         <tr>
                             <th>Id</th>
@@ -123,14 +173,14 @@
                     @foreach (var i in Model.Incidents)
                     {
                         <tr>
-                            <td><a asp-controller="Incidents" asp-action="Details" asp-route-id="@i.Id">@i.Id</a></td>
+                            <td><a asp-controller="Incidents" asp-action="Details" asp-route-id="@i.Id" class="text-decoration-none">@i.Id</a></td>
                             <td>@i.Type</td>
                             <td>@i.Location</td>
-                            <td>@i.Severity</td>
+                            <td><span class="severity-@i.Severity.ToLower()">@i.Severity</span></td>
                             <td>@i.Confidence.ToString("0.00")</td>
-                            <td>@i.ReportIds.Count</td>
+                            <td><span class="badge bg-info">@i.ReportIds.Count</span></td>
                             <td class="small">@string.Join(", ", i.Services)</td>
-                            <td>@i.Status</td>
+                            <td><span class="status-@i.Status.ToLower()">@i.Status</span></td>
                             <td>@i.LastAction</td>
                         </tr>
                     }
@@ -140,9 +190,9 @@
         </div>
     </div>
     <div class="col-lg-5">
-        <div class="card panel-card">
+        <div class="card panel-card fade-in">
             <div class="card-header d-flex justify-content-between align-items-center">
-                <span class="fw-semibold">4. Action history</span>
+                <span class="fw-semibold">Action History</span>
                 <form method="get" class="d-flex gap-1">
                     <input class="form-control form-control-sm" name="incidentId" value="@Model.ActionFilterIncidentId" placeholder="Filter I001" />
                     <button class="btn btn-sm btn-outline-secondary" type="submit">Filter</button>
@@ -163,11 +213,11 @@
                     @foreach (var a in Model.ActionHistory)
                     {
                         <tr>
-                            <td><a asp-controller="Incidents" asp-action="Details" asp-route-id="@a.IncidentId">@a.IncidentId</a></td>
-                            <td>@a.Action</td>
+                            <td><a asp-controller="Incidents" asp-action="Details" asp-route-id="@a.IncidentId" class="text-decoration-none">@a.IncidentId</a></td>
+                            <td><span class="badge bg-primary">@a.Action</span></td>
                             <td>@a.Service</td>
-                            <td class="small">@a.Time.ToString("HH:mm:ss")</td>
-                            <td>@a.Outcome</td>
+                            <td class="small text-muted">@a.Time.ToString("HH:mm:ss")</td>
+                            <td><span class="status-@a.Outcome.ToLower()">@a.Outcome</span></td>
                         </tr>
                     }
                     </tbody>
