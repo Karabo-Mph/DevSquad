@@ -1,0 +1,13 @@
+report_id,timestamp,location,type,description
+R001,2026-09-16 08:01:00,Main Library 2F,electrical,Burning smell near the west stacks and a faint crackle from a wall outlet
+R002,2026-09-16 08:12:00,Main Libary 2nd floor,fire,Light smoke in the same wing as the electrical smell — students leaving
+R003,2026-09-16 08:14:00,Main Library 2F,fire,Light smoke in the same wing as the electrical smell — students leaving
+R004,2026-09-16 08:20:00,Sports Field,medical,Player down after a collision; conscious but in pain
+R005,2026-09-16 08:35:00,Main Library 2F,electrical,Staff says it may be dust on a heater — possible false alarm
+R006,2026-09-16 09:02:00,North Dorm A,fire,Fire alarm sounding on the third floor with visible haze in the corridor
+R007,2026-09-16 09:08:00,North Dorm Block A,fire,Residents corroborate haze and a hot door on 3F
+R008,2026-09-16 09:15:00,IT Lab B,it,Wifi outage in the lab; no safety issue
+R009,2026-09-16 09:40:00,,facilities,Water on the floor near an unknown building entrance
+R010,not-a-date,South Gate,security,Suspicious person trying doors after hours
+R011,2026-09-16 10:05:00,Main Library 2F,fire,Smoke is thicker now and the outlet is sparking
+R012,2026-09-16 10:20:00,Sports Field,medical,Player recovered; all clear from first-aid tent

@@ -1,0 +1,40 @@
+@model Incident
+@{
+    ViewData["Title"] = Model.Id;
+    var reports = ViewBag.Reports as IEnumerable<CampusReport> ?? Enumerable.Empty<CampusReport>();
+    var actions = ViewBag.Actions as IEnumerable<ActionHistoryEntry> ?? Enumerable.Empty<ActionHistoryEntry>();
+    var decisions = ViewBag.Decisions as IEnumerable<DecisionLogEntry> ?? Enumerable.Empty<DecisionLogEntry>();
+}
+<h1 class="h3">@Model.Id</h1>
+<p>@Model.Type · @Model.Location · <strong>@Model.Severity</strong> · @Model.Status · confidence @Model.Confidence.ToString("0.00")</p>
+<p class="text-muted">@Model.Summary</p>
+
+<h2 class="h5 mt-4">Reports</h2>
+<ul>
+@foreach (var r in reports)
+{
+    <li><code>@r.ReportId</code> (@r.Relationship) — @r.Description</li>
+}
+</ul>
+
+<h2 class="h5 mt-4">Action history</h2>
+<table class="table table-sm">
+    <thead><tr><th>Action</th><th>Service</th><th>Time</th><th>Outcome</th></tr></thead>
+    <tbody>
+    @foreach (var a in actions)
+    {
+        <tr><td>@a.Action</td><td>@a.Service</td><td>@a.Time.ToString("u")</td><td>@a.Outcome</td></tr>
+    }
+    </tbody>
+</table>
+
+<h2 class="h5 mt-4">Decisions</h2>
+<table class="table table-sm">
+    <thead><tr><th>Report</th><th>Decision</th><th>Reason</th></tr></thead>
+    <tbody>
+    @foreach (var d in decisions)
+    {
+        <tr><td>@d.ReportId</td><td>@d.Decision</td><td>@d.Reason</td></tr>
+    }
+    </tbody>
+</table>

@@ -1,0 +1,410 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\services\\reportprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:services\\reportprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\services\\incidentstateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:services\\incidentstateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\services\\illmclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:services\\illmclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\services\\groqllmclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:services\\groqllmclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\services\\decisionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:services\\decisionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\services\\correlationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:services\\correlationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\services\\assessmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:services\\assessmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\output\\.gitkeep||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:output\\.gitkeep||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\models\\incident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:models\\incident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\models\\decisionsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:models\\decisionsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\models\\decisionlogentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:models\\decisionlogentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\models\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:models\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\models\\correlationsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:models\\correlationsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\models\\campusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:models\\campusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\models\\campusreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:models\\campusreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\models\\actionhistoryentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:models\\actionhistoryentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\models\\actiondecision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:models\\actiondecision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|c:\\users\\junio\\desktop\\devsquad\\campus_crisis_agent_completed\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{895EA95D-023D-4A66-99F7-178276ADE7BB}|Campus_Crisis_Agent.csproj|solutionrelative:controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-16T10:12:15.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-16T10:12:12.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReportProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\ReportProcessor.cs",
+              "RelativeDocumentMoniker": "Services\\ReportProcessor.cs",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\ReportProcessor.cs",
+              "RelativeToolTip": "Services\\ReportProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:11:13.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IncidentStateService.cs",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\IncidentStateService.cs",
+              "RelativeDocumentMoniker": "Services\\IncidentStateService.cs",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\IncidentStateService.cs",
+              "RelativeToolTip": "Services\\IncidentStateService.cs",
+              "ViewState": "AgIAAAsBAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:11:05.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ILlmClient.cs",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\ILlmClient.cs",
+              "RelativeDocumentMoniker": "Services\\ILlmClient.cs",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\ILlmClient.cs",
+              "RelativeToolTip": "Services\\ILlmClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:09:50.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GroqLlmClient.cs",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\GroqLlmClient.cs",
+              "RelativeDocumentMoniker": "Services\\GroqLlmClient.cs",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\GroqLlmClient.cs",
+              "RelativeToolTip": "Services\\GroqLlmClient.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:09:45.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DecisionService.cs",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\DecisionService.cs",
+              "RelativeDocumentMoniker": "Services\\DecisionService.cs",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\DecisionService.cs",
+              "RelativeToolTip": "Services\\DecisionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:09:43.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CorrelationService.cs",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\CorrelationService.cs",
+              "RelativeDocumentMoniker": "Services\\CorrelationService.cs",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\CorrelationService.cs",
+              "RelativeToolTip": "Services\\CorrelationService.cs",
+              "ViewState": "AgIAANQAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:08:44.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AssessmentService.cs",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\AssessmentService.cs",
+              "RelativeDocumentMoniker": "Services\\AssessmentService.cs",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Services\\AssessmentService.cs",
+              "RelativeToolTip": "Services\\AssessmentService.cs",
+              "ViewState": "AgIAALUAAAAAAAAAAAAiwIIAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:07:51.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": ".gitkeep",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Output\\.gitkeep",
+              "RelativeDocumentMoniker": "Output\\.gitkeep",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Output\\.gitkeep",
+              "RelativeToolTip": "Output\\.gitkeep",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-09-16T10:07:46.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Incident.cs",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\Incident.cs",
+              "RelativeDocumentMoniker": "Models\\Incident.cs",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\Incident.cs",
+              "RelativeToolTip": "Models\\Incident.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:06:00.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:05:55.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DecisionSettings.cs",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\DecisionSettings.cs",
+              "RelativeDocumentMoniker": "Models\\DecisionSettings.cs",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\DecisionSettings.cs",
+              "RelativeToolTip": "Models\\DecisionSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:05:49.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DecisionLogEntry.cs",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\DecisionLogEntry.cs",
+              "RelativeDocumentMoniker": "Models\\DecisionLogEntry.cs",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\DecisionLogEntry.cs",
+              "RelativeToolTip": "Models\\DecisionLogEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:05:47.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\DashboardViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\DashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\DashboardViewModel.cs",
+              "RelativeToolTip": "Models\\DashboardViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:05:45.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CorrelationSettings.cs",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\CorrelationSettings.cs",
+              "RelativeDocumentMoniker": "Models\\CorrelationSettings.cs",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\CorrelationSettings.cs",
+              "RelativeToolTip": "Models\\CorrelationSettings.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:05:35.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CampusService.cs",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\CampusService.cs",
+              "RelativeDocumentMoniker": "Models\\CampusService.cs",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\CampusService.cs",
+              "RelativeToolTip": "Models\\CampusService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:05:34.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CampusReport.cs",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\CampusReport.cs",
+              "RelativeDocumentMoniker": "Models\\CampusReport.cs",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\CampusReport.cs",
+              "RelativeToolTip": "Models\\CampusReport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:05:32.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ActionHistoryEntry.cs",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\ActionHistoryEntry.cs",
+              "RelativeDocumentMoniker": "Models\\ActionHistoryEntry.cs",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\ActionHistoryEntry.cs",
+              "RelativeToolTip": "Models\\ActionHistoryEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:05:28.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ActionDecision.cs",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\ActionDecision.cs",
+              "RelativeDocumentMoniker": "Models\\ActionDecision.cs",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Models\\ActionDecision.cs",
+              "RelativeToolTip": "Models\\ActionDecision.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:05:24.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:03:52.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\junio\\Desktop\\DevSquad\\Campus_Crisis_Agent_Completed\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Controllers\\DashboardController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAwAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T09:14:02.579Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

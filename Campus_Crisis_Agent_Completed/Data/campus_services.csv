@@ -1,0 +1,13 @@
+service_id,name,type,keywords
+SVC-SECURITY,Campus Security,security,assault violence theft suspicious weapon
+SVC-MEDICAL,Campus Clinic,medical,injury ill blood first-aid
+SVC-EMS,Emergency Medical Services,ems,unconscious ambulance cardiac
+SVC-FIRE,Fire & Rescue,fire,fire smoke flames alarm
+SVC-FACILITIES,Facilities,facilities,leak hvac elevator building water
+SVC-ELECTRICAL,Electrical Services,electrical,power spark outlet electrical
+SVC-IT,IT Support,it,wifi network server computer
+SVC-ACCESS,Access Control,access,lock badge door
+SVC-CLEANING,Cleaning Services,cleaning,spill litter
+SVC-MANAGEMENT,Campus Management,management,general unknown
+SVC-COMMS,Communications,comms,announce evac
+SVC-COUNSELLING,Counselling,counselling,distress mental

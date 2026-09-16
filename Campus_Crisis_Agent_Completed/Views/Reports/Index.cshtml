@@ -1,0 +1,34 @@
+@model IReadOnlyList<CampusReport>
+@{
+    ViewData["Title"] = "Reports";
+}
+<h1 class="h3 mb-3">Reports (CSV order)</h1>
+<table class="table table-sm table-striped">
+    <thead>
+        <tr>
+            <th>Report</th>
+            <th>Time</th>
+            <th>Location</th>
+            <th>Type</th>
+            <th>Processed</th>
+            <th>Incident</th>
+            <th>Rel.</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var r in Model)
+    {
+        <tr>
+            <td><code>@r.ReportId</code></td>
+            <td>@r.Timestamp.ToString("u")</td>
+            <td>@r.Location</td>
+            <td>@r.Type</td>
+            <td>@(r.Processed ? "yes" : "queued")</td>
+            <td>@r.IncidentId</td>
+            <td>@r.Relationship</td>
+            <td class="small">@r.Description</td>
+        </tr>
+    }
+    </tbody>
+</table>

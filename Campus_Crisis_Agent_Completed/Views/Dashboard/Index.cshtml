@@ -1,0 +1,178 @@
+@model DashboardViewModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+    <div>
+        <h1 class="h3 mb-0">Incident correlation dashboard</h1>
+        <p class="text-muted mb-0">Observe → Correlate → Assess → Decide → Act → Record → Monitor → Reassess</p>
+    </div>
+    <div class="d-flex gap-2">
+        <form asp-action="ProcessNext" method="post">
+            @Html.AntiForgeryToken()
+            <button class="btn btn-primary" type="submit" @(Model.RemainingCount == 0 ? "disabled" : null)>Process next report</button>
+        </form>
+        <form asp-action="ProcessAll" method="post">
+            @Html.AntiForgeryToken()
+            <button class="btn btn-outline-primary" type="submit" @(Model.RemainingCount == 0 ? "disabled" : null)>Process all</button>
+        </form>
+    </div>
+</div>
+
+<p class="small text-muted">
+    Processed @Model.ProcessedCount / @Model.TotalReports
+    · remaining @Model.RemainingCount
+    · predictions: <code>@Model.PredictionsPath</code>
+</p>
+
+<div class="row g-3">
+    <div class="col-lg-5">
+        <div class="card panel-card h-100">
+            <div class="card-header fw-semibold">1. Incoming report</div>
+            <div class="card-body">
+                @if (Model.IncomingReport is null)
+                {
+                    <p class="text-muted mb-0">No reports loaded.</p>
+                }
+                else
+                {
+                    var r = Model.IncomingReport;
+                    <span class="badge @(Model.IncomingIsQueued ? "bg-secondary" : "bg-success") mb-2">
+                        @(Model.IncomingIsQueued ? "Queued (next)" : "Just processed")
+                    </span>
+                    <dl class="row mb-0 small">
+                        <dt class="col-sm-4">Report ID</dt><dd class="col-sm-8"><code>@r.ReportId</code></dd>
+                        <dt class="col-sm-4">Timestamp</dt><dd class="col-sm-8">@r.Timestamp.ToString("u")</dd>
+                        <dt class="col-sm-4">Location</dt><dd class="col-sm-8">@r.Location</dd>
+                        <dt class="col-sm-4">Type</dt><dd class="col-sm-8">@r.Type</dd>
+                        <dt class="col-sm-4">Description</dt><dd class="col-sm-8">@r.Description</dd>
+                        @if (r.Processed)
+                        {
+                            <dt class="col-sm-4">Incident</dt><dd class="col-sm-8">@r.IncidentId (@r.Relationship)</dd>
+                            <dt class="col-sm-4">Severity</dt><dd class="col-sm-8">@r.AssignedSeverity · @r.Confidence.ToString("0.00")</dd>
+                        }
+                    </dl>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-7">
+        <div class="card panel-card h-100">
+            <div class="card-header fw-semibold">2. Decision log</div>
+            <div class="table-responsive">
+                <table class="table table-sm table-striped mb-0">
+                    <thead>
+                        <tr>
+                            <th>Report</th>
+                            <th>Incident</th>
+                            <th>Rel.</th>
+                            <th>Severity</th>
+                            <th>Conf.</th>
+                            <th>Decision</th>
+                            <th>Service</th>
+                            <th>Status</th>
+                            <th>Reason</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var d in Model.DecisionLog)
+                    {
+                        <tr>
+                            <td><code>@d.ReportId</code></td>
+                            <td><a asp-controller="Incidents" asp-action="Details" asp-route-id="@d.IncidentId">@d.IncidentId</a></td>
+                            <td>@d.Relationship</td>
+                            <td>@d.Severity</td>
+                            <td>@d.Confidence.ToString("0.00")</td>
+                            <td>
+                                @d.Decision
+                                @if (d.HumanReviewRequired)
+                                {
+                                    <span class="badge bg-warning text-dark">review</span>
+                                }
+                            </td>
+                            <td>@d.Service</td>
+                            <td>@d.Status</td>
+                            <td class="small">@d.Reason</td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-7">
+        <div class="card panel-card">
+            <div class="card-header fw-semibold">3. Incident summary</div>
+            <div class="table-responsive">
+                <table class="table table-sm table-hover mb-0">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Type</th>
+                            <th>Location</th>
+                            <th>Severity</th>
+                            <th>Conf.</th>
+                            <th>Reports</th>
+                            <th>Services</th>
+                            <th>Status</th>
+                            <th>Last action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var i in Model.Incidents)
+                    {
+                        <tr>
+                            <td><a asp-controller="Incidents" asp-action="Details" asp-route-id="@i.Id">@i.Id</a></td>
+                            <td>@i.Type</td>
+                            <td>@i.Location</td>
+                            <td>@i.Severity</td>
+                            <td>@i.Confidence.ToString("0.00")</td>
+                            <td>@i.ReportIds.Count</td>
+                            <td class="small">@string.Join(", ", i.Services)</td>
+                            <td>@i.Status</td>
+                            <td>@i.LastAction</td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-5">
+        <div class="card panel-card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span class="fw-semibold">4. Action history</span>
+                <form method="get" class="d-flex gap-1">
+                    <input class="form-control form-control-sm" name="incidentId" value="@Model.ActionFilterIncidentId" placeholder="Filter I001" />
+                    <button class="btn btn-sm btn-outline-secondary" type="submit">Filter</button>
+                </form>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-sm mb-0">
+                    <thead>
+                        <tr>
+                            <th>Incident</th>
+                            <th>Action</th>
+                            <th>Service</th>
+                            <th>Time (UTC)</th>
+                            <th>Outcome</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var a in Model.ActionHistory)
+                    {
+                        <tr>
+                            <td><a asp-controller="Incidents" asp-action="Details" asp-route-id="@a.IncidentId">@a.IncidentId</a></td>
+                            <td>@a.Action</td>
+                            <td>@a.Service</td>
+                            <td class="small">@a.Time.ToString("HH:mm:ss")</td>
+                            <td>@a.Outcome</td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

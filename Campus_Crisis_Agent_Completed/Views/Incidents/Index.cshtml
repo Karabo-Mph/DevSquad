@@ -1,0 +1,29 @@
+@model IReadOnlyList<Incident>
+@{
+    ViewData["Title"] = "Incidents";
+}
+<h1 class="h3 mb-3">Incidents</h1>
+<p class="text-muted">Click an incident for its reports and current assessment.</p>
+<div class="accordion" id="incidentAccordion">
+    @foreach (var i in Model)
+    {
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc-@i.Id">
+                    <span class="me-3"><strong>@i.Id</strong></span>
+                    <span class="me-3">@i.Type · @i.Location</span>
+                    <span class="badge bg-secondary me-2">@i.Severity</span>
+                    <span class="badge bg-info text-dark me-2">@i.Status</span>
+                    <span class="small text-muted">@i.ReportIds.Count report(s)</span>
+                </button>
+            </h2>
+            <div id="acc-@i.Id" class="accordion-collapse collapse" data-bs-parent="#incidentAccordion">
+                <div class="accordion-body">
+                    <p class="mb-1">Confidence @i.Confidence.ToString("0.00") · last action @i.LastAction · services @string.Join(", ", i.Services)</p>
+                    <p class="small text-muted">@i.Summary</p>
+                    <a class="btn btn-sm btn-outline-primary" asp-action="Details" asp-route-id="@i.Id">Open detail</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

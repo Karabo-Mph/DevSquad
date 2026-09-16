@@ -1,0 +1,209 @@
+2026-09-16 11:53:38.320 +02:00 [INF] Starting Campus Crisis Agent
+2026-09-16 11:53:38.552 +02:00 [INF] Campus Crisis Agent started successfully
+2026-09-16 11:53:39.632 +02:00 [INF] IncidentStateService initialized. Predictions will be written to C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Output\predictions.jsonl
+2026-09-16 11:53:39.644 +02:00 [INF] CorrelationService initialized with thresholds: Match=0.55, Duplicate=0.9
+2026-09-16 11:53:39.655 +02:00 [INF] GroqLlmClient initialized with model: llama3-70b-8192
+2026-09-16 11:53:39.658 +02:00 [INF] AssessmentService initialized with LLM client: true
+2026-09-16 11:53:39.663 +02:00 [INF] DecisionService initialized with HumanReviewConfidenceFloor: 0.45
+2026-09-16 11:53:39.673 +02:00 [INF] Loaded 12 services
+2026-09-16 11:53:39.693 +02:00 [INF] ReportProcessor initialized with 12 reports
+2026-09-16 11:55:58.848 +02:00 [INF] Processing report R001 at position 1/12
+2026-09-16 11:55:58.879 +02:00 [INF] Created incident I001 for report R001
+2026-09-16 11:55:58.889 +02:00 [INF] Created new incident I001 for report R001
+2026-09-16 11:55:59.502 +02:00 [ERR] Groq API error: "BadRequest" - {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+2026-09-16 11:55:59.657 +02:00 [ERR] Error calling Groq API
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+2026-09-16 11:55:59.868 +02:00 [WRN] LLM assessment failed for report R001, falling back to rule-based
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+   at CampusCrisisAgent.Services.AssessmentService.Assess(CampusReport report, Incident incident) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\AssessmentService.cs:line 36
+2026-09-16 11:55:59.887 +02:00 [INF] Assessment for R001: MEDIUM (confidence: 0.12, conflicting: false)
+2026-09-16 11:55:59.910 +02:00 [INF] Decision for R001: DISPATCH → SVC-ELECTRICAL (status: Open, human review: true)
+2026-09-16 11:55:59.955 +02:00 [INF] Successfully processed report R001
+2026-09-16 11:56:14.202 +02:00 [INF] Processing report R002 at position 2/12
+2026-09-16 11:56:14.230 +02:00 [INF] Created incident I002 for report R002
+2026-09-16 11:56:14.238 +02:00 [INF] Created new incident I002 for report R002
+2026-09-16 11:56:14.469 +02:00 [ERR] Groq API error: "BadRequest" - {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+2026-09-16 11:56:14.527 +02:00 [ERR] Error calling Groq API
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+2026-09-16 11:56:14.626 +02:00 [WRN] LLM assessment failed for report R002, falling back to rule-based
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+   at CampusCrisisAgent.Services.AssessmentService.Assess(CampusReport report, Incident incident) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\AssessmentService.cs:line 36
+2026-09-16 11:56:14.642 +02:00 [INF] Assessment for R002: MEDIUM (confidence: 0.12, conflicting: false)
+2026-09-16 11:56:14.655 +02:00 [INF] Decision for R002: DISPATCH → SVC-FIRE (status: Open, human review: true)
+2026-09-16 11:56:14.670 +02:00 [INF] Successfully processed report R002
+2026-09-16 11:56:17.791 +02:00 [INF] Processing report R003 at position 3/12
+2026-09-16 11:56:17.802 +02:00 [INF] Updating existing incident I002 for report R003
+2026-09-16 11:56:18.036 +02:00 [ERR] Groq API error: "BadRequest" - {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+2026-09-16 11:56:18.085 +02:00 [ERR] Error calling Groq API
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+2026-09-16 11:56:18.178 +02:00 [WRN] LLM assessment failed for report R003, falling back to rule-based
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+   at CampusCrisisAgent.Services.AssessmentService.Assess(CampusReport report, Incident incident) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\AssessmentService.cs:line 36
+2026-09-16 11:56:18.191 +02:00 [INF] Assessment for R003: CRITICAL (confidence: 0.28, conflicting: false)
+2026-09-16 11:56:18.202 +02:00 [INF] Decision for R003: NO_ACTION → SVC-FIRE (status: Open, human review: true)
+2026-09-16 11:56:18.217 +02:00 [INF] Successfully processed report R003
+2026-09-16 11:56:18.223 +02:00 [INF] Processing report R004 at position 4/12
+2026-09-16 11:56:18.231 +02:00 [INF] Created incident I003 for report R004
+2026-09-16 11:56:18.238 +02:00 [INF] Created new incident I003 for report R004
+2026-09-16 11:56:18.465 +02:00 [ERR] Groq API error: "BadRequest" - {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+2026-09-16 11:56:18.504 +02:00 [ERR] Error calling Groq API
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+2026-09-16 11:56:18.601 +02:00 [WRN] LLM assessment failed for report R004, falling back to rule-based
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+   at CampusCrisisAgent.Services.AssessmentService.Assess(CampusReport report, Incident incident) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\AssessmentService.cs:line 36
+2026-09-16 11:56:18.611 +02:00 [INF] Assessment for R004: MEDIUM (confidence: 0.12, conflicting: false)
+2026-09-16 11:56:18.622 +02:00 [INF] Decision for R004: DISPATCH → SVC-MEDICAL (status: Open, human review: true)
+2026-09-16 11:56:18.636 +02:00 [INF] Successfully processed report R004
+2026-09-16 11:56:18.642 +02:00 [INF] Processing report R005 at position 5/12
+2026-09-16 11:56:18.651 +02:00 [INF] Updating existing incident I001 for report R005
+2026-09-16 11:56:18.875 +02:00 [ERR] Groq API error: "BadRequest" - {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+2026-09-16 11:56:18.920 +02:00 [ERR] Error calling Groq API
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+2026-09-16 11:56:19.024 +02:00 [WRN] LLM assessment failed for report R005, falling back to rule-based
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+   at CampusCrisisAgent.Services.AssessmentService.Assess(CampusReport report, Incident incident) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\AssessmentService.cs:line 36
+2026-09-16 11:56:19.036 +02:00 [INF] Assessment for R005: MEDIUM (confidence: 0.70, conflicting: false)
+2026-09-16 11:56:19.047 +02:00 [INF] Decision for R005: CLOSE → SVC-ELECTRICAL (status: Resolved, human review: false)
+2026-09-16 11:56:19.060 +02:00 [INF] Successfully processed report R005
+2026-09-16 11:56:19.066 +02:00 [INF] Processing report R006 at position 6/12
+2026-09-16 11:56:19.077 +02:00 [INF] Created incident I004 for report R006
+2026-09-16 11:56:19.085 +02:00 [INF] Created new incident I004 for report R006
+2026-09-16 11:56:19.355 +02:00 [ERR] Groq API error: "BadRequest" - {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+2026-09-16 11:56:19.406 +02:00 [ERR] Error calling Groq API
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+2026-09-16 11:56:19.509 +02:00 [WRN] LLM assessment failed for report R006, falling back to rule-based
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+   at CampusCrisisAgent.Services.AssessmentService.Assess(CampusReport report, Incident incident) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\AssessmentService.cs:line 36
+2026-09-16 11:56:19.521 +02:00 [INF] Assessment for R006: MEDIUM (confidence: 0.12, conflicting: false)
+2026-09-16 11:56:19.532 +02:00 [INF] Decision for R006: DISPATCH → SVC-FIRE (status: Open, human review: true)
+2026-09-16 11:56:19.547 +02:00 [INF] Successfully processed report R006
+2026-09-16 11:56:19.553 +02:00 [INF] Processing report R007 at position 7/12
+2026-09-16 11:56:19.565 +02:00 [INF] Updating existing incident I004 for report R007
+2026-09-16 11:56:19.838 +02:00 [ERR] Groq API error: "BadRequest" - {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+2026-09-16 11:56:19.885 +02:00 [ERR] Error calling Groq API
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+2026-09-16 11:56:19.980 +02:00 [WRN] LLM assessment failed for report R007, falling back to rule-based
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+   at CampusCrisisAgent.Services.AssessmentService.Assess(CampusReport report, Incident incident) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\AssessmentService.cs:line 36
+2026-09-16 11:56:19.993 +02:00 [INF] Assessment for R007: CRITICAL (confidence: 0.28, conflicting: false)
+2026-09-16 11:56:20.004 +02:00 [INF] Decision for R007: NO_ACTION → SVC-FIRE (status: Open, human review: true)
+2026-09-16 11:56:20.018 +02:00 [INF] Successfully processed report R007
+2026-09-16 11:56:20.024 +02:00 [INF] Processing report R008 at position 8/12
+2026-09-16 11:56:20.035 +02:00 [INF] Created incident I005 for report R008
+2026-09-16 11:56:20.042 +02:00 [INF] Created new incident I005 for report R008
+2026-09-16 11:56:20.329 +02:00 [ERR] Groq API error: "BadRequest" - {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+2026-09-16 11:56:20.376 +02:00 [ERR] Error calling Groq API
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+2026-09-16 11:56:20.477 +02:00 [WRN] LLM assessment failed for report R008, falling back to rule-based
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+   at CampusCrisisAgent.Services.AssessmentService.Assess(CampusReport report, Incident incident) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\AssessmentService.cs:line 36
+2026-09-16 11:56:20.490 +02:00 [INF] Assessment for R008: MEDIUM (confidence: 0.12, conflicting: false)
+2026-09-16 11:56:20.501 +02:00 [INF] Decision for R008: DISPATCH → SVC-IT (status: Open, human review: true)
+2026-09-16 11:56:20.517 +02:00 [INF] Successfully processed report R008
+2026-09-16 11:56:20.524 +02:00 [INF] Processing report R009 at position 9/12
+2026-09-16 11:56:20.536 +02:00 [INF] Created incident I006 for report R009
+2026-09-16 11:56:20.545 +02:00 [INF] Created new incident I006 for report R009
+2026-09-16 11:56:20.803 +02:00 [ERR] Groq API error: "BadRequest" - {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+2026-09-16 11:56:20.848 +02:00 [ERR] Error calling Groq API
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+2026-09-16 11:56:20.941 +02:00 [WRN] LLM assessment failed for report R009, falling back to rule-based
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+   at CampusCrisisAgent.Services.AssessmentService.Assess(CampusReport report, Incident incident) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\AssessmentService.cs:line 36
+2026-09-16 11:56:20.953 +02:00 [INF] Assessment for R009: MEDIUM (confidence: 0.20, conflicting: false)
+2026-09-16 11:56:20.965 +02:00 [INF] Decision for R009: DISPATCH → SVC-FACILITIES (status: Open, human review: true)
+2026-09-16 11:56:20.978 +02:00 [INF] Successfully processed report R009
+2026-09-16 11:56:20.984 +02:00 [INF] Processing report R010 at position 10/12
+2026-09-16 11:56:20.995 +02:00 [INF] Created incident I007 for report R010
+2026-09-16 11:56:21.001 +02:00 [INF] Created new incident I007 for report R010
+2026-09-16 11:56:21.283 +02:00 [ERR] Groq API error: "BadRequest" - {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+2026-09-16 11:56:21.331 +02:00 [ERR] Error calling Groq API
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+2026-09-16 11:56:21.432 +02:00 [WRN] LLM assessment failed for report R010, falling back to rule-based
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+   at CampusCrisisAgent.Services.AssessmentService.Assess(CampusReport report, Incident incident) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\AssessmentService.cs:line 36
+2026-09-16 11:56:21.444 +02:00 [INF] Assessment for R010: MEDIUM (confidence: 0.20, conflicting: false)
+2026-09-16 11:56:21.455 +02:00 [INF] Decision for R010: DISPATCH → SVC-SECURITY (status: Open, human review: true)
+2026-09-16 11:56:21.471 +02:00 [INF] Successfully processed report R010
+2026-09-16 11:56:21.477 +02:00 [INF] Processing report R011 at position 11/12
+2026-09-16 11:56:21.487 +02:00 [INF] Updating existing incident I002 for report R011
+2026-09-16 11:56:21.772 +02:00 [ERR] Groq API error: "BadRequest" - {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+2026-09-16 11:56:21.827 +02:00 [ERR] Error calling Groq API
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+2026-09-16 11:56:21.919 +02:00 [WRN] LLM assessment failed for report R011, falling back to rule-based
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+   at CampusCrisisAgent.Services.AssessmentService.Assess(CampusReport report, Incident incident) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\AssessmentService.cs:line 36
+2026-09-16 11:56:21.937 +02:00 [INF] Assessment for R011: CRITICAL (confidence: 0.48, conflicting: false)
+2026-09-16 11:56:21.948 +02:00 [INF] Decision for R011: NO_ACTION → SVC-FIRE (status: Open, human review: true)
+2026-09-16 11:56:21.963 +02:00 [INF] Successfully processed report R011
+2026-09-16 11:56:21.969 +02:00 [INF] Processing report R012 at position 12/12
+2026-09-16 11:56:21.979 +02:00 [INF] Updating existing incident I003 for report R012
+2026-09-16 11:56:22.249 +02:00 [ERR] Groq API error: "BadRequest" - {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+2026-09-16 11:56:22.295 +02:00 [ERR] Error calling Groq API
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+2026-09-16 11:56:22.393 +02:00 [WRN] LLM assessment failed for report R012, falling back to rule-based
+System.Net.Http.HttpRequestException: Groq API returned BadRequest: {"error":{"message":"The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.","type":"invalid_request_error","code":"model_decommissioned"}}
+
+   at CampusCrisisAgent.Services.GroqLlmClient.AssessAsync(String prompt) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\GroqLlmClient.cs:line 76
+   at CampusCrisisAgent.Services.AssessmentService.Assess(CampusReport report, Incident incident) in C:\Users\junio\Desktop\DevSquad\Campus_Crisis_Agent_Completed\Services\AssessmentService.cs:line 36
+2026-09-16 11:56:22.405 +02:00 [INF] Assessment for R012: MEDIUM (confidence: 0.70, conflicting: false)
+2026-09-16 11:56:22.417 +02:00 [INF] Decision for R012: CLOSE → SVC-MEDICAL (status: Resolved, human review: false)
+2026-09-16 11:56:22.431 +02:00 [INF] Successfully processed report R012
+2026-09-16 11:56:22.438 +02:00 [INF] No more reports to process
